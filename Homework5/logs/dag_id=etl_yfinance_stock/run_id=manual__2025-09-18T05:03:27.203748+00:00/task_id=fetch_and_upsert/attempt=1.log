@@ -1,0 +1,63 @@
+[2025-09-18T05:03:28.300+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-18T05:03:28.310+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_yfinance_stock.fetch_and_upsert manual__2025-09-18T05:03:27.203748+00:00 [queued]>
+[2025-09-18T05:03:28.312+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_yfinance_stock.fetch_and_upsert manual__2025-09-18T05:03:27.203748+00:00 [queued]>
+[2025-09-18T05:03:28.313+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-09-18T05:03:28.317+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_and_upsert> on 2025-09-18 05:03:27.203748+00:00
+[2025-09-18T05:03:28.322+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=6519) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-09-18T05:03:28.322+0000] {standard_task_runner.py:64} INFO - Started process 6521 to run task
+[2025-09-18T05:03:28.323+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_yfinance_stock', 'fetch_and_upsert', 'manual__2025-09-18T05:03:27.203748+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/etl_yfinance_stock.py', '--cfg-path', '/tmp/tmp08t92g3p']
+[2025-09-18T05:03:28.323+0000] {standard_task_runner.py:91} INFO - Job 51: Subtask fetch_and_upsert
+[2025-09-18T05:03:28.341+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_yfinance_stock.fetch_and_upsert manual__2025-09-18T05:03:27.203748+00:00 [running]> on host 11e1994bdecf
+[2025-09-18T05:03:28.473+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dingyuyao' AIRFLOW_CTX_DAG_ID='etl_yfinance_stock' AIRFLOW_CTX_TASK_ID='fetch_and_upsert' AIRFLOW_CTX_EXECUTION_DATE='2025-09-18T05:03:27.203748+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-18T05:03:27.203748+00:00'
+[2025-09-18T05:03:28.474+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-18T05:03:28.477+0000] {warnings.py:112} WARNING - /opt/***/dags/etl_yfinance_stock.py:36: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, start = start_date.isoformat(), end = end_date.isoformat(), progress = False)
+
+[2025-09-18T05:03:29.132+0000] {warnings.py:112} WARNING - /opt/***/dags/etl_yfinance_stock.py:36: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, start = start_date.isoformat(), end = end_date.isoformat(), progress = False)
+
+[2025-09-18T05:03:29.462+0000] {base.py:84} INFO - Using connection ID 'snowflake_default' for task execution.
+[2025-09-18T05:03:29.463+0000] {connection.py:408} INFO - Snowflake Connector for Python Version: 3.11.0, Python Version: 3.12.4, Platform: Linux-6.10.14-linuxkit-aarch64-with-glibc2.36
+[2025-09-18T05:03:29.464+0000] {connection.py:1258} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-09-18T05:03:30.663+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T05:03:30.809+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T05:03:30.992+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T05:03:31.531+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T05:03:31.710+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T05:03:31.712+0000] {logging_mixin.py:188} INFO - [ctx] version=9.28.1, wh=BEETLE_QUERY_WH, role=TRAINING_ROLE, db=ASH_DB, schema=STOCK_SCHEMA
+[2025-09-18T05:03:35.293+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T05:03:35.390+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T05:03:35.391+0000] {logging_mixin.py:188} INFO - [fetch_and_upsert] Error during database operation: not all arguments converted during string formatting
+[2025-09-18T05:03:35.392+0000] {connection.py:773} INFO - closed
+[2025-09-18T05:03:35.471+0000] {connection.py:779} INFO - No async queries seem to be running, deleting session
+[2025-09-18T05:03:35.609+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-18T05:03:35.611+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl_yfinance_stock.py", line 83, in fetch_and_upsert
+    cs.executemany("""
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/cursor.py", line 1382, in executemany
+    fmt % self._connection._process_params_pyformat(param, self)
+    ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+[2025-09-18T05:03:35.627+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_yfinance_stock, task_id=fetch_and_upsert, run_id=manual__2025-09-18T05:03:27.203748+00:00, execution_date=20250918T050327, start_date=20250918T050328, end_date=20250918T050335
+[2025-09-18T05:03:35.637+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 51 for task fetch_and_upsert (not all arguments converted during string formatting; 6521)
+[2025-09-18T05:03:35.656+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-09-18T05:03:35.666+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-18T05:03:35.666+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

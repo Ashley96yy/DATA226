@@ -1,0 +1,25 @@
+[2025-09-18T21:07:19.912+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-18T21:07:19.920+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_forecast_stock.wait_for_etl manual__2025-09-18T21:06:58.989671+00:00 [queued]>
+[2025-09-18T21:07:19.922+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_forecast_stock.wait_for_etl manual__2025-09-18T21:06:58.989671+00:00 [queued]>
+[2025-09-18T21:07:19.923+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 4
+[2025-09-18T21:07:19.927+0000] {taskinstance.py:2330} INFO - Executing <Task(ExternalTaskSensor): wait_for_etl> on 2025-09-18 21:06:58.989671+00:00
+[2025-09-18T21:07:19.930+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=12923) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-09-18T21:07:19.931+0000] {standard_task_runner.py:64} INFO - Started process 12925 to run task
+[2025-09-18T21:07:19.931+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ml_forecast_stock', 'wait_for_etl', 'manual__2025-09-18T21:06:58.989671+00:00', '--job-id', '121', '--raw', '--subdir', 'DAGS_FOLDER/ml_forecast_stock.py', '--cfg-path', '/tmp/tmprs2w64zn']
+[2025-09-18T21:07:19.932+0000] {standard_task_runner.py:91} INFO - Job 121: Subtask wait_for_etl
+[2025-09-18T21:07:19.948+0000] {task_command.py:426} INFO - Running <TaskInstance: ml_forecast_stock.wait_for_etl manual__2025-09-18T21:06:58.989671+00:00 [running]> on host 11e1994bdecf
+[2025-09-18T21:07:19.976+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data226' AIRFLOW_CTX_DAG_ID='ml_forecast_stock' AIRFLOW_CTX_TASK_ID='wait_for_etl' AIRFLOW_CTX_EXECUTION_DATE='2025-09-18T21:06:58.989671+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-18T21:06:58.989671+00:00'
+[2025-09-18T21:07:19.976+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-18T21:07:19.977+0000] {baseoperator.py:400} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2025-09-18T21:07:19.979+0000] {external_task.py:258} INFO - Poking for tasks ['fetch_and_upsert'] in dag "etl_yfinance_stock" on 2025-09-18T21:06:58.989671+00:00 ... 
+[2025-09-18T21:07:19.981+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-18T21:07:19.982+0000] {taskinstance.py:2506} INFO - Skipping due to soft_fail is set to True.
+[2025-09-18T21:07:19.984+0000] {taskinstance.py:1206} INFO - Marking task as SKIPPED. dag_id=ml_forecast_stock, task_id=wait_for_etl, run_id=manual__2025-09-18T21:06:58.989671+00:00, execution_date=20250918T210658, start_date=20250918T210719, end_date=20250918T210719
+[2025-09-18T21:07:20.032+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-18T21:07:20.036+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class SnowflakeOperator. (This class is deprecated. Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`. Also, you can provide `hook_params={'warehouse': <warehouse>, 'database': <database>, 'role': <role>, 'schema': <schema>, 'authenticator': <authenticator>,'session_parameters': <session_parameters>}`.)
+  result = cls.__new__(cls)
+
+[2025-09-18T21:07:20.043+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-18T21:07:20.044+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

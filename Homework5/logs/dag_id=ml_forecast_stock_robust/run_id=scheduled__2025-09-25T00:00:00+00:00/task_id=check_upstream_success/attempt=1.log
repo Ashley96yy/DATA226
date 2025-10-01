@@ -1,0 +1,29 @@
+[2025-09-26T00:00:01.983+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-26T00:00:01.997+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_forecast_stock_robust.check_upstream_success scheduled__2025-09-25T00:00:00+00:00 [queued]>
+[2025-09-26T00:00:02.001+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_forecast_stock_robust.check_upstream_success scheduled__2025-09-25T00:00:00+00:00 [queued]>
+[2025-09-26T00:00:02.001+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2025-09-26T00:00:02.022+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): check_upstream_success> on 2025-09-25 00:00:00+00:00
+[2025-09-26T00:00:02.033+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=17940) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-09-26T00:00:02.035+0000] {standard_task_runner.py:64} INFO - Started process 17945 to run task
+[2025-09-26T00:00:02.036+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ml_forecast_stock_robust', 'check_upstream_success', 'scheduled__2025-09-25T00:00:00+00:00', '--job-id', '409', '--raw', '--subdir', 'DAGS_FOLDER/ml_forecast_stock.py', '--cfg-path', '/tmp/tmpkoi85614']
+[2025-09-26T00:00:02.038+0000] {standard_task_runner.py:91} INFO - Job 409: Subtask check_upstream_success
+[2025-09-26T00:00:02.086+0000] {task_command.py:426} INFO - Running <TaskInstance: ml_forecast_stock_robust.check_upstream_success scheduled__2025-09-25T00:00:00+00:00 [running]> on host 11e1994bdecf
+[2025-09-26T00:00:02.128+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data226' AIRFLOW_CTX_DAG_ID='ml_forecast_stock_robust' AIRFLOW_CTX_TASK_ID='check_upstream_success' AIRFLOW_CTX_EXECUTION_DATE='2025-09-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-25T00:00:00+00:00'
+[2025-09-26T00:00:02.130+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-26T00:00:02.133+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/context.py:320: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2025-09-26T00:00:02.134+0000] {ml_forecast_stock.py:170} INFO - Checking for upstream task success on date: 2025-09-25
+[2025-09-26T00:00:02.134+0000] {ml_forecast_stock.py:171} INFO - Looking for DAG: "etl_yfinance_stock", Task: fetch_and_upsert
+[2025-09-26T00:00:02.134+0000] {ml_forecast_stock.py:172} INFO - Searching between: 2025-09-25 00:00:00+00:00 and 2025-09-26 00:00:00+00:00
+[2025-09-26T00:00:02.140+0000] {ml_forecast_stock.py:186} INFO - Found 0 successful upstream tasks
+[2025-09-26T00:00:02.141+0000] {ml_forecast_stock.py:200} WARNING - No successful upstream task found for date 2025-09-25
+[2025-09-26T00:00:02.141+0000] {ml_forecast_stock.py:201} INFO - Proceeding anyway - data might be from previous runs
+[2025-09-26T00:00:02.141+0000] {python.py:237} INFO - Done. Returned value was: True
+[2025-09-26T00:00:02.142+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-26T00:00:02.151+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ml_forecast_stock_robust, task_id=check_upstream_success, run_id=scheduled__2025-09-25T00:00:00+00:00, execution_date=20250925T000000, start_date=20250926T000001, end_date=20250926T000002
+[2025-09-26T00:00:02.176+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-26T00:00:02.214+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-26T00:00:02.216+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

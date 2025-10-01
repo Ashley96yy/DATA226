@@ -1,0 +1,98 @@
+[2025-09-18T20:43:51.126+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-18T20:43:51.137+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_forecast_stock.create_or_replace_model manual__2025-09-18T20:11:24.208151+00:00 [queued]>
+[2025-09-18T20:43:51.139+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_forecast_stock.create_or_replace_model manual__2025-09-18T20:11:24.208151+00:00 [queued]>
+[2025-09-18T20:43:51.139+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-09-18T20:43:51.143+0000] {taskinstance.py:2330} INFO - Executing <Task(SnowflakeOperator): create_or_replace_model> on 2025-09-18 20:11:24.208151+00:00
+[2025-09-18T20:43:51.148+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=12599) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-09-18T20:43:51.149+0000] {standard_task_runner.py:64} INFO - Started process 12601 to run task
+[2025-09-18T20:43:51.150+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ml_forecast_stock', 'create_or_replace_model', 'manual__2025-09-18T20:11:24.208151+00:00', '--job-id', '118', '--raw', '--subdir', 'DAGS_FOLDER/ml_forecast_stock.py', '--cfg-path', '/tmp/tmpplpli6te']
+[2025-09-18T20:43:51.150+0000] {standard_task_runner.py:91} INFO - Job 118: Subtask create_or_replace_model
+[2025-09-18T20:43:51.167+0000] {task_command.py:426} INFO - Running <TaskInstance: ml_forecast_stock.create_or_replace_model manual__2025-09-18T20:11:24.208151+00:00 [running]> on host 11e1994bdecf
+[2025-09-18T20:43:51.203+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data226' AIRFLOW_CTX_DAG_ID='ml_forecast_stock' AIRFLOW_CTX_TASK_ID='create_or_replace_model' AIRFLOW_CTX_EXECUTION_DATE='2025-09-18T20:11:24.208151+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-18T20:11:24.208151+00:00'
+[2025-09-18T20:43:51.204+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-18T20:43:51.204+0000] {sql.py:282} INFO - Executing: 
+        USE WAREHOUSE "BEETLE_QUERY_WH";
+        USE DATABASE "ASH_DB";
+        USE SCHEMA "STOCK_SCHEMA";
+
+        CREATE OR REPLACE SNOWFLAKE.ML.FORECAST stock_price(
+            INPUT_DATA => SYSTEM$REFERENCE('VIEW', 'stock_price_daily_v1'),
+            SERIES_COLNAME => 'SYMBOL',
+            TIMESTAMP_COLNAME => 'DATE_V1',
+            TARGET_COLNAME => 'CLOSE',
+            CONFIG_OBJECT => {'ON_ERROR': 'SKIP'}
+        );
+        
+[2025-09-18T20:43:51.208+0000] {base.py:84} INFO - Using connection ID 'snowflake_default' for task execution.
+[2025-09-18T20:43:51.211+0000] {base.py:84} INFO - Using connection ID 'snowflake_default' for task execution.
+[2025-09-18T20:43:51.211+0000] {connection.py:408} INFO - Snowflake Connector for Python Version: 3.11.0, Python Version: 3.12.4, Platform: Linux-6.10.14-linuxkit-aarch64-with-glibc2.36
+[2025-09-18T20:43:51.212+0000] {connection.py:1258} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-09-18T20:43:52.501+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T20:43:52.502+0000] {sql.py:495} INFO - Running statement: USE WAREHOUSE "BEETLE_QUERY_WH";, parameters: None
+[2025-09-18T20:43:52.668+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T20:43:52.669+0000] {sql.py:504} INFO - Rows affected: 1
+[2025-09-18T20:43:52.673+0000] {snowflake.py:422} INFO - Rows affected: 1
+[2025-09-18T20:43:52.674+0000] {snowflake.py:423} INFO - Snowflake query id: 01bf23fb-0106-77e4-000f-c0df0022227e
+[2025-09-18T20:43:52.674+0000] {sql.py:495} INFO - Running statement: USE DATABASE "ASH_DB";, parameters: None
+[2025-09-18T20:43:52.860+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T20:43:52.861+0000] {sql.py:504} INFO - Rows affected: 1
+[2025-09-18T20:43:52.862+0000] {snowflake.py:422} INFO - Rows affected: 1
+[2025-09-18T20:43:52.863+0000] {snowflake.py:423} INFO - Snowflake query id: 01bf23fb-0106-78c7-000f-c0df0021d606
+[2025-09-18T20:43:52.863+0000] {sql.py:495} INFO - Running statement: USE SCHEMA "STOCK_SCHEMA";, parameters: None
+[2025-09-18T20:43:53.459+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T20:43:53.459+0000] {sql.py:504} INFO - Rows affected: 1
+[2025-09-18T20:43:53.460+0000] {snowflake.py:422} INFO - Rows affected: 1
+[2025-09-18T20:43:53.460+0000] {snowflake.py:423} INFO - Snowflake query id: 01bf23fb-0106-7800-000f-c0df002242ae
+[2025-09-18T20:43:53.460+0000] {sql.py:495} INFO - Running statement: CREATE OR REPLACE SNOWFLAKE.ML.FORECAST stock_price(
+            INPUT_DATA => SYSTEM$REFERENCE('VIEW', 'stock_price_daily_v1'),
+            SERIES_COLNAME => 'SYMBOL',
+            TIMESTAMP_COLNAME => 'DATE_V1',
+            TARGET_COLNAME => 'CLOSE',
+            CONFIG_OBJECT => {'ON_ERROR': 'SKIP'}
+        );, parameters: None
+[2025-09-18T20:43:58.107+0000] {connection.py:773} INFO - closed
+[2025-09-18T20:43:58.616+0000] {connection.py:779} INFO - No async queries seem to be running, deleting session
+[2025-09-18T20:43:58.798+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-18T20:43:58.800+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 288, in execute
+    output = hook.run(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/snowflake/hooks/snowflake.py", line 410, in run
+    self._run_command(cur, sql_statement, parameters)  # type: ignore[attr-defined]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 500, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/cursor.py", line 1080, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 345, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 090232 (25000): 01bf23fb-0106-77e4-000f-c0df00222282: Uncaught exception of type 'STATEMENT_ERROR' on line 0 at position -1 : Uncaught exception of type 'STATEMENT_ERROR' on line 2 at position 0 : Execution error in store procedure _BASECONSTRUCT:
+Stored procedure execution error: Scoped transaction started in stored procedure is incomplete and it was rolled back.
+At Snowflake.execute, line 18 position 10
+[2025-09-18T20:43:58.822+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=ml_forecast_stock, task_id=create_or_replace_model, run_id=manual__2025-09-18T20:11:24.208151+00:00, execution_date=20250918T201124, start_date=20250918T204351, end_date=20250918T204358
+[2025-09-18T20:43:58.833+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 118 for task create_or_replace_model (090232 (25000): 01bf23fb-0106-77e4-000f-c0df00222282: Uncaught exception of type 'STATEMENT_ERROR' on line 0 at position -1 : Uncaught exception of type 'STATEMENT_ERROR' on line 2 at position 0 : Execution error in store procedure _BASECONSTRUCT:
+Stored procedure execution error: Scoped transaction started in stored procedure is incomplete and it was rolled back.
+At Snowflake.execute, line 18 position 10; 12601)
+[2025-09-18T20:43:58.860+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-09-18T20:43:58.867+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class SnowflakeOperator. (This class is deprecated. Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`. Also, you can provide `hook_params={'warehouse': <warehouse>, 'database': <database>, 'role': <role>, 'schema': <schema>, 'authenticator': <authenticator>,'session_parameters': <session_parameters>}`.)
+  result = cls.__new__(cls)
+
+[2025-09-18T20:43:58.874+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-18T20:43:58.875+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

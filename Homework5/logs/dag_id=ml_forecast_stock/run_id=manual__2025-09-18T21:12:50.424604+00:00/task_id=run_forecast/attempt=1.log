@@ -1,0 +1,73 @@
+[2025-09-18T21:15:23.130+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-18T21:15:23.141+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_forecast_stock.run_forecast manual__2025-09-18T21:12:50.424604+00:00 [queued]>
+[2025-09-18T21:15:23.143+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_forecast_stock.run_forecast manual__2025-09-18T21:12:50.424604+00:00 [queued]>
+[2025-09-18T21:15:23.143+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-09-18T21:15:23.147+0000] {taskinstance.py:2330} INFO - Executing <Task(SnowflakeOperator): run_forecast> on 2025-09-18 21:12:50.424604+00:00
+[2025-09-18T21:15:23.150+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=13053) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-09-18T21:15:23.151+0000] {standard_task_runner.py:64} INFO - Started process 13055 to run task
+[2025-09-18T21:15:23.151+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ml_forecast_stock', 'run_forecast', 'manual__2025-09-18T21:12:50.424604+00:00', '--job-id', '127', '--raw', '--subdir', 'DAGS_FOLDER/ml_forecast_stock.py', '--cfg-path', '/tmp/tmpon4yycf5']
+[2025-09-18T21:15:23.152+0000] {standard_task_runner.py:91} INFO - Job 127: Subtask run_forecast
+[2025-09-18T21:15:23.167+0000] {task_command.py:426} INFO - Running <TaskInstance: ml_forecast_stock.run_forecast manual__2025-09-18T21:12:50.424604+00:00 [running]> on host 11e1994bdecf
+[2025-09-18T21:15:23.204+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data226' AIRFLOW_CTX_DAG_ID='ml_forecast_stock' AIRFLOW_CTX_TASK_ID='run_forecast' AIRFLOW_CTX_EXECUTION_DATE='2025-09-18T21:12:50.424604+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-18T21:12:50.424604+00:00'
+[2025-09-18T21:15:23.205+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-18T21:15:23.205+0000] {sql.py:282} INFO - Executing: 
+        USE WAREHOUSE "BEETLE_QUERY_WH";
+        USE DATABASE "ASH_DB";
+        USE SCHEMA "STOCK_SCHEMA";
+
+        -- Run the model forecast (FIXED: use correct model name)
+        CALL stock_price!FORECAST(
+            FORECASTING_PERIODS => 7
+        );
+        
+        -- Retrieve the most recent forecast results
+        CREATE OR REPLACE TABLE forecast_latest AS
+        SELECT * FROM TABLE(RESULT_SCAN(LAST_QUERY_ID()));
+        
+[2025-09-18T21:15:23.209+0000] {base.py:84} INFO - Using connection ID 'snowflake_default' for task execution.
+[2025-09-18T21:15:23.212+0000] {base.py:84} INFO - Using connection ID 'snowflake_default' for task execution.
+[2025-09-18T21:15:23.213+0000] {connection.py:408} INFO - Snowflake Connector for Python Version: 3.11.0, Python Version: 3.12.4, Platform: Linux-6.10.14-linuxkit-aarch64-with-glibc2.36
+[2025-09-18T21:15:23.213+0000] {connection.py:1258} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-09-18T21:15:23.948+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T21:15:23.948+0000] {sql.py:495} INFO - Running statement: USE WAREHOUSE "BEETLE_QUERY_WH";, parameters: None
+[2025-09-18T21:15:24.179+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T21:15:24.179+0000] {sql.py:504} INFO - Rows affected: 1
+[2025-09-18T21:15:24.180+0000] {snowflake.py:422} INFO - Rows affected: 1
+[2025-09-18T21:15:24.180+0000] {snowflake.py:423} INFO - Snowflake query id: 01bf241b-0106-768a-000f-c0df0022517e
+[2025-09-18T21:15:24.180+0000] {sql.py:495} INFO - Running statement: USE DATABASE "ASH_DB";, parameters: None
+[2025-09-18T21:15:25.181+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T21:15:25.183+0000] {sql.py:504} INFO - Rows affected: 1
+[2025-09-18T21:15:25.183+0000] {snowflake.py:422} INFO - Rows affected: 1
+[2025-09-18T21:15:25.183+0000] {snowflake.py:423} INFO - Snowflake query id: 01bf241b-0106-75c0-000f-c0df00221336
+[2025-09-18T21:15:25.184+0000] {sql.py:495} INFO - Running statement: USE SCHEMA "STOCK_SCHEMA";, parameters: None
+[2025-09-18T21:15:25.386+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T21:15:25.387+0000] {sql.py:504} INFO - Rows affected: 1
+[2025-09-18T21:15:25.388+0000] {snowflake.py:422} INFO - Rows affected: 1
+[2025-09-18T21:15:25.388+0000] {snowflake.py:423} INFO - Snowflake query id: 01bf241b-0106-7680-000f-c0df0022041e
+[2025-09-18T21:15:25.388+0000] {sql.py:495} INFO - Running statement: -- Run the model forecast (FIXED: use correct model name)
+        CALL stock_price!FORECAST(
+            FORECASTING_PERIODS => 7
+        );, parameters: None
+[2025-09-18T21:15:52.789+0000] {cursor.py:1149} INFO - Number of results in first chunk: 35
+[2025-09-18T21:15:52.790+0000] {sql.py:504} INFO - Rows affected: 35
+[2025-09-18T21:15:52.790+0000] {snowflake.py:422} INFO - Rows affected: 35
+[2025-09-18T21:15:52.790+0000] {snowflake.py:423} INFO - Snowflake query id: 01bf241b-0106-7800-000f-c0df0022430a
+[2025-09-18T21:15:52.791+0000] {sql.py:495} INFO - Running statement: -- Retrieve the most recent forecast results
+        CREATE OR REPLACE TABLE forecast_latest AS
+        SELECT * FROM TABLE(RESULT_SCAN(LAST_QUERY_ID()));, parameters: None
+[2025-09-18T21:15:53.923+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-18T21:15:53.924+0000] {sql.py:504} INFO - Rows affected: 1
+[2025-09-18T21:15:53.924+0000] {snowflake.py:422} INFO - Rows affected: 1
+[2025-09-18T21:15:53.924+0000] {snowflake.py:423} INFO - Snowflake query id: 01bf241b-0106-77e2-000f-c0df0021f462
+[2025-09-18T21:15:53.924+0000] {connection.py:773} INFO - closed
+[2025-09-18T21:15:53.993+0000] {connection.py:779} INFO - No async queries seem to be running, deleting session
+[2025-09-18T21:15:54.055+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-18T21:15:54.073+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ml_forecast_stock, task_id=run_forecast, run_id=manual__2025-09-18T21:12:50.424604+00:00, execution_date=20250918T211250, start_date=20250918T211523, end_date=20250918T211554
+[2025-09-18T21:15:54.127+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-18T21:15:54.134+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class SnowflakeOperator. (This class is deprecated. Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`. Also, you can provide `hook_params={'warehouse': <warehouse>, 'database': <database>, 'role': <role>, 'schema': <schema>, 'authenticator': <authenticator>,'session_parameters': <session_parameters>}`.)
+  result = cls.__new__(cls)
+
+[2025-09-18T21:15:54.141+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-18T21:15:54.142+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

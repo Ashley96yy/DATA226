@@ -1,0 +1,272 @@
+[2025-10-01T22:19:52.223+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-01T22:19:52.232+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: CountryCaptial_v1.load manual__2025-10-01T22:19:47.422047+00:00 [queued]>
+[2025-10-01T22:19:52.237+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: CountryCaptial_v1.load manual__2025-10-01T22:19:47.422047+00:00 [queued]>
+[2025-10-01T22:19:52.237+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-01T22:19:52.244+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): load> on 2025-10-01 22:19:47.422047+00:00
+[2025-10-01T22:19:52.248+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=6528) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-01T22:19:52.249+0000] {standard_task_runner.py:64} INFO - Started process 6532 to run task
+[2025-10-01T22:19:52.249+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'CountryCaptial_v1', 'load', 'manual__2025-10-01T22:19:47.422047+00:00', '--job-id', '496', '--raw', '--subdir', 'DAGS_FOLDER/country_capital_to_snowflake_v1.py', '--cfg-path', '/tmp/tmpv3z8y6kc']
+[2025-10-01T22:19:52.250+0000] {standard_task_runner.py:91} INFO - Job 496: Subtask load
+[2025-10-01T22:19:52.276+0000] {task_command.py:426} INFO - Running <TaskInstance: CountryCaptial_v1.load manual__2025-10-01T22:19:47.422047+00:00 [running]> on host 11e1994bdecf
+[2025-10-01T22:19:52.323+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='CountryCaptial_v1' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2025-10-01T22:19:47.422047+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-01T22:19:47.422047+00:00'
+[2025-10-01T22:19:52.324+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-01T22:19:52.334+0000] {connection.py:408} INFO - Snowflake Connector for Python Version: 3.11.0, Python Version: 3.12.4, Platform: Linux-6.10.14-linuxkit-aarch64-with-glibc2.36
+[2025-10-01T22:19:52.335+0000] {connection.py:1258} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-10-01T22:19:53.271+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-10-01T22:19:53.409+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-10-01T22:19:54.411+0000] {logging_mixin.py:188} INFO - Abkhazia - Sukhumi
+[2025-10-01T22:19:55.166+0000] {logging_mixin.py:188} INFO - Afghanistan - Kabul
+[2025-10-01T22:19:56.072+0000] {logging_mixin.py:188} INFO - Akrotiri and Dhekelia - Episkopi Cantonment
+[2025-10-01T22:19:56.969+0000] {logging_mixin.py:188} INFO - Albania - Tirana
+[2025-10-01T22:19:57.982+0000] {logging_mixin.py:188} INFO - Algeria - Algiers
+[2025-10-01T22:19:58.392+0000] {logging_mixin.py:188} INFO - American Samoa - Pago Pago
+[2025-10-01T22:19:59.164+0000] {logging_mixin.py:188} INFO - Andorra - Andorra la Vella
+[2025-10-01T22:20:00.874+0000] {logging_mixin.py:188} INFO - Angola - Luanda
+[2025-10-01T22:20:01.275+0000] {logging_mixin.py:188} INFO - Anguilla - The Valley
+[2025-10-01T22:20:02.190+0000] {logging_mixin.py:188} INFO - Antigua and Barbuda - St. John''s
+[2025-10-01T22:20:03.310+0000] {logging_mixin.py:188} INFO - Argentina - Buenos Aires
+[2025-10-01T22:20:03.931+0000] {logging_mixin.py:188} INFO - Armenia - Yerevan
+[2025-10-01T22:20:05.060+0000] {logging_mixin.py:188} INFO - Aruba - Oranjestad
+[2025-10-01T22:20:05.600+0000] {logging_mixin.py:188} INFO - Ascension Island - Georgetown
+[2025-10-01T22:20:06.187+0000] {logging_mixin.py:188} INFO - Australia - Canberra
+[2025-10-01T22:20:06.687+0000] {logging_mixin.py:188} INFO - Austria - Vienna
+[2025-10-01T22:20:07.635+0000] {logging_mixin.py:188} INFO - Azerbaijan - Baku
+[2025-10-01T22:20:08.752+0000] {logging_mixin.py:188} INFO - Bahamas - Nassau
+[2025-10-01T22:20:09.348+0000] {logging_mixin.py:188} INFO - Bahrain - Manama
+[2025-10-01T22:20:09.799+0000] {logging_mixin.py:188} INFO - Bangladesh - Dhaka
+[2025-10-01T22:20:10.382+0000] {logging_mixin.py:188} INFO - Barbados - Bridgetown
+[2025-10-01T22:20:11.319+0000] {logging_mixin.py:188} INFO - Belarus - Minsk
+[2025-10-01T22:20:11.719+0000] {logging_mixin.py:188} INFO - Belgium - Brussels
+[2025-10-01T22:20:12.354+0000] {logging_mixin.py:188} INFO - Belize - Belmopan
+[2025-10-01T22:20:13.251+0000] {logging_mixin.py:188} INFO - Benin - Porto-Novo
+[2025-10-01T22:20:14.293+0000] {logging_mixin.py:188} INFO - Bermuda - Hamilton
+[2025-10-01T22:20:14.707+0000] {logging_mixin.py:188} INFO - Bhutan - Thimphu
+[2025-10-01T22:20:15.686+0000] {logging_mixin.py:188} INFO - Bolivia - La Paz
+[2025-10-01T22:20:16.321+0000] {logging_mixin.py:188} INFO - Bosnia and Herzegovina - Sarajevo
+[2025-10-01T22:20:17.219+0000] {logging_mixin.py:188} INFO - Botswana - Gaborone
+[2025-10-01T22:20:17.758+0000] {logging_mixin.py:188} INFO - Brazil - Brasââ lia
+[2025-10-01T22:20:18.386+0000] {logging_mixin.py:188} INFO - British Virgin Islands - Road Town
+[2025-10-01T22:20:18.809+0000] {logging_mixin.py:188} INFO - Brunei - Bandar Seri Begawan
+[2025-10-01T22:20:19.302+0000] {logging_mixin.py:188} INFO - Bulgaria - Sofia
+[2025-10-01T22:20:20.104+0000] {logging_mixin.py:188} INFO - Burkina Faso - Ouagadougou
+[2025-10-01T22:20:21.029+0000] {logging_mixin.py:188} INFO - Burundi - Bujumbura
+[2025-10-01T22:20:21.792+0000] {logging_mixin.py:188} INFO - Cambodia - Phnom Penh
+[2025-10-01T22:20:22.370+0000] {logging_mixin.py:188} INFO - Cameroon - YaoundâÂ©
+[2025-10-01T22:20:22.972+0000] {logging_mixin.py:188} INFO - Canada - Ottawa
+[2025-10-01T22:20:23.544+0000] {logging_mixin.py:188} INFO - Cape Verde - Praia
+[2025-10-01T22:20:24.661+0000] {logging_mixin.py:188} INFO - Cayman Islands - George Town
+[2025-10-01T22:20:25.208+0000] {logging_mixin.py:188} INFO - Central African Republic - Bangui
+[2025-10-01T22:20:25.691+0000] {logging_mixin.py:188} INFO - Chad - N''Djamena
+[2025-10-01T22:20:26.760+0000] {logging_mixin.py:188} INFO - Chile - Santiago
+[2025-10-01T22:20:27.468+0000] {logging_mixin.py:188} INFO - China - Beijing
+[2025-10-01T22:20:27.896+0000] {logging_mixin.py:188} INFO - Christmas Island - Flying Fish Cove
+[2025-10-01T22:20:28.509+0000] {logging_mixin.py:188} INFO - Cocos (Keeling) Islands - West Island
+[2025-10-01T22:20:29.232+0000] {logging_mixin.py:188} INFO - Colombia - BogotâÂ°
+[2025-10-01T22:20:29.836+0000] {logging_mixin.py:188} INFO - Comoros - Moroni
+[2025-10-01T22:20:30.340+0000] {logging_mixin.py:188} INFO - Cook Islands - Avarua
+[2025-10-01T22:20:30.876+0000] {logging_mixin.py:188} INFO - Costa Rica - San JosâÂ©
+[2025-10-01T22:20:31.737+0000] {logging_mixin.py:188} INFO - Croatia - Zagreb
+[2025-10-01T22:20:32.290+0000] {logging_mixin.py:188} INFO - Cuba - Havana
+[2025-10-01T22:20:32.979+0000] {logging_mixin.py:188} INFO - CuraâÃao - Willemstad
+[2025-10-01T22:20:33.461+0000] {logging_mixin.py:188} INFO - Cyprus - Nicosia
+[2025-10-01T22:20:35.571+0000] {logging_mixin.py:188} INFO - Czech Republic - Prague
+[2025-10-01T22:20:36.294+0000] {logging_mixin.py:188} INFO - CâÂ¥te d''Ivoire - Yamoussoukro
+[2025-10-01T22:20:37.214+0000] {logging_mixin.py:188} INFO - Democratic Republic of the Congo - Kinshasa
+[2025-10-01T22:20:37.687+0000] {logging_mixin.py:188} INFO - Denmark - Copenhagen
+[2025-10-01T22:20:38.081+0000] {logging_mixin.py:188} INFO - Djibouti - Djibouti
+[2025-10-01T22:20:38.635+0000] {logging_mixin.py:188} INFO - Dominica - Roseau
+[2025-10-01T22:20:39.146+0000] {logging_mixin.py:188} INFO - Dominican Republic - Santo Domingo
+[2025-10-01T22:20:39.764+0000] {logging_mixin.py:188} INFO - East Timor (Timor-Leste) - Dili
+[2025-10-01T22:20:40.788+0000] {logging_mixin.py:188} INFO - Easter Island - Hanga Roa
+[2025-10-01T22:20:41.501+0000] {logging_mixin.py:188} INFO - Ecuador - Quito
+[2025-10-01T22:20:42.017+0000] {logging_mixin.py:188} INFO - Egypt - Cairo
+[2025-10-01T22:20:43.366+0000] {logging_mixin.py:188} INFO - El Salvador - San Salvador
+[2025-10-01T22:20:43.897+0000] {logging_mixin.py:188} INFO - Equatorial Guinea - Malabo
+[2025-10-01T22:20:44.592+0000] {logging_mixin.py:188} INFO - Eritrea - Asmara
+[2025-10-01T22:20:45.087+0000] {logging_mixin.py:188} INFO - Estonia - Tallinn
+[2025-10-01T22:20:45.628+0000] {logging_mixin.py:188} INFO - Ethiopia - Addis Ababa
+[2025-10-01T22:20:46.125+0000] {logging_mixin.py:188} INFO - Falkland Islands - Stanley
+[2025-10-01T22:20:47.354+0000] {logging_mixin.py:188} INFO - Faroe Islands - Tââ¥rshavn
+[2025-10-01T22:20:48.066+0000] {logging_mixin.py:188} INFO - Federated States of Micronesia - Palikir
+[2025-10-01T22:20:48.587+0000] {logging_mixin.py:188} INFO - Fiji - Suva
+[2025-10-01T22:20:49.296+0000] {logging_mixin.py:188} INFO - Finland - Helsinki
+[2025-10-01T22:20:49.936+0000] {logging_mixin.py:188} INFO - France - Paris
+[2025-10-01T22:20:51.158+0000] {logging_mixin.py:188} INFO - French Guiana - Cayenne
+[2025-10-01T22:20:51.649+0000] {logging_mixin.py:188} INFO - French Polynesia - Papeete
+[2025-10-01T22:20:52.460+0000] {logging_mixin.py:188} INFO - Gabon - Libreville
+[2025-10-01T22:20:53.453+0000] {logging_mixin.py:188} INFO - Gambia - Banjul
+[2025-10-01T22:20:54.046+0000] {logging_mixin.py:188} INFO - Georgia - Tbilisi
+[2025-10-01T22:20:54.650+0000] {logging_mixin.py:188} INFO - Germany - Berlin
+[2025-10-01T22:20:55.357+0000] {logging_mixin.py:188} INFO - Ghana - Accra
+[2025-10-01T22:20:55.855+0000] {logging_mixin.py:188} INFO - Gibraltar - Gibraltar
+[2025-10-01T22:20:56.902+0000] {logging_mixin.py:188} INFO - Greece - Athens
+[2025-10-01T22:20:57.712+0000] {logging_mixin.py:188} INFO - Greenland - Nuuk
+[2025-10-01T22:20:58.729+0000] {logging_mixin.py:188} INFO - Grenada - St. George''s
+[2025-10-01T22:20:59.290+0000] {logging_mixin.py:188} INFO - Guam - Hagââ¢tâÂ±a
+[2025-10-01T22:21:00.090+0000] {logging_mixin.py:188} INFO - Guatemala - Guatemala City
+[2025-10-01T22:21:00.678+0000] {logging_mixin.py:188} INFO - Guernsey - St. Peter Port
+[2025-10-01T22:21:01.165+0000] {logging_mixin.py:188} INFO - Guinea - Conakry
+[2025-10-01T22:21:01.616+0000] {logging_mixin.py:188} INFO - Guinea-Bissau - Bissau
+[2025-10-01T22:21:02.160+0000] {logging_mixin.py:188} INFO - Guyana - Georgetown
+[2025-10-01T22:21:03.447+0000] {logging_mixin.py:188} INFO - Haiti - Port-au-Prince
+[2025-10-01T22:21:04.114+0000] {logging_mixin.py:188} INFO - Honduras - Tegucigalpa
+[2025-10-01T22:21:04.972+0000] {logging_mixin.py:188} INFO - Hungary - Budapest
+[2025-10-01T22:21:05.809+0000] {logging_mixin.py:188} INFO - Iceland - Reykjavââ k
+[2025-10-01T22:21:06.624+0000] {logging_mixin.py:188} INFO - India - New Delhi
+[2025-10-01T22:21:07.066+0000] {logging_mixin.py:188} INFO - Indonesia - Jakarta
+[2025-10-01T22:21:07.481+0000] {logging_mixin.py:188} INFO - Iran - Tehran
+[2025-10-01T22:21:08.086+0000] {logging_mixin.py:188} INFO - Iraq - Baghdad
+[2025-10-01T22:21:09.497+0000] {logging_mixin.py:188} INFO - Ireland - Dublin
+[2025-10-01T22:21:10.591+0000] {logging_mixin.py:188} INFO - Isle of Man - Douglas
+[2025-10-01T22:21:11.275+0000] {logging_mixin.py:188} INFO - Israel - Jerusalem
+[2025-10-01T22:21:11.909+0000] {logging_mixin.py:188} INFO - Italy - Rome
+[2025-10-01T22:21:12.334+0000] {logging_mixin.py:188} INFO - Jamaica - Kingston
+[2025-10-01T22:21:13.164+0000] {logging_mixin.py:188} INFO - Japan - Tokyo
+[2025-10-01T22:21:14.395+0000] {logging_mixin.py:188} INFO - Jersey - St. Helier
+[2025-10-01T22:21:15.237+0000] {logging_mixin.py:188} INFO - Jordan - Amman
+[2025-10-01T22:21:16.531+0000] {logging_mixin.py:188} INFO - Kazakhstan - Astana
+[2025-10-01T22:21:17.044+0000] {logging_mixin.py:188} INFO - Kenya - Nairobi
+[2025-10-01T22:21:17.929+0000] {logging_mixin.py:188} INFO - Kiribati - Tarawa
+[2025-10-01T22:21:18.305+0000] {logging_mixin.py:188} INFO - Kosovo - Pristina
+[2025-10-01T22:21:18.842+0000] {logging_mixin.py:188} INFO - Kuwait - Kuwait City
+[2025-10-01T22:21:19.309+0000] {logging_mixin.py:188} INFO - Kyrgyzstan - Bishkek
+[2025-10-01T22:21:20.316+0000] {logging_mixin.py:188} INFO - Laos - Vientiane
+[2025-10-01T22:21:20.977+0000] {logging_mixin.py:188} INFO - Latvia - Riga
+[2025-10-01T22:21:21.429+0000] {logging_mixin.py:188} INFO - Lebanon - Beirut
+[2025-10-01T22:21:22.146+0000] {logging_mixin.py:188} INFO - Lesotho - Maseru
+[2025-10-01T22:21:22.659+0000] {logging_mixin.py:188} INFO - Liberia - Monrovia
+[2025-10-01T22:21:23.447+0000] {logging_mixin.py:188} INFO - Libya - Tripoli
+[2025-10-01T22:21:23.979+0000] {logging_mixin.py:188} INFO - Liechtenstein - Vaduz
+[2025-10-01T22:21:24.726+0000] {logging_mixin.py:188} INFO - Lithuania - Vilnius
+[2025-10-01T22:21:25.173+0000] {logging_mixin.py:188} INFO - Luxembourg - Luxembourg
+[2025-10-01T22:21:25.665+0000] {logging_mixin.py:188} INFO - Macedonia - Skopje
+[2025-10-01T22:21:26.398+0000] {logging_mixin.py:188} INFO - Madagascar - Antananarivo
+[2025-10-01T22:21:26.940+0000] {logging_mixin.py:188} INFO - Malawi - Lilongwe
+[2025-10-01T22:21:27.963+0000] {logging_mixin.py:188} INFO - Malaysia - Kuala Lumpur
+[2025-10-01T22:21:28.927+0000] {logging_mixin.py:188} INFO - Maldives - MalâÂ©
+[2025-10-01T22:21:29.332+0000] {logging_mixin.py:188} INFO - Mali - Bamako
+[2025-10-01T22:21:31.017+0000] {logging_mixin.py:188} INFO - Malta - Valletta
+[2025-10-01T22:21:31.799+0000] {logging_mixin.py:188} INFO - Marshall Islands - Majuro
+[2025-10-01T22:21:32.310+0000] {logging_mixin.py:188} INFO - Mauritania - Nouakchott
+[2025-10-01T22:21:32.814+0000] {logging_mixin.py:188} INFO - Mauritius - Port Louis
+[2025-10-01T22:21:33.439+0000] {logging_mixin.py:188} INFO - Mexico - Mexico City
+[2025-10-01T22:21:33.957+0000] {logging_mixin.py:188} INFO - Moldova - Chisinau
+[2025-10-01T22:21:34.688+0000] {logging_mixin.py:188} INFO - Monaco - Monaco
+[2025-10-01T22:21:35.420+0000] {logging_mixin.py:188} INFO - Mongolia - Ulaanbaatar
+[2025-10-01T22:21:35.891+0000] {logging_mixin.py:188} INFO - Montenegro - Podgorica
+[2025-10-01T22:21:36.828+0000] {logging_mixin.py:188} INFO - Montserrat - Plymouth
+[2025-10-01T22:21:38.105+0000] {logging_mixin.py:188} INFO - Morocco - Rabat
+[2025-10-01T22:21:38.657+0000] {logging_mixin.py:188} INFO - Mozambique - Maputo
+[2025-10-01T22:21:39.467+0000] {logging_mixin.py:188} INFO - Myanmar - Naypyidaw
+[2025-10-01T22:21:39.976+0000] {logging_mixin.py:188} INFO - Nagorno-Karabakh Republic - Stepanakert
+[2025-10-01T22:21:41.922+0000] {logging_mixin.py:188} INFO - Namibia - Windhoek
+[2025-10-01T22:21:42.661+0000] {logging_mixin.py:188} INFO - Nauru - Yaren
+[2025-10-01T22:21:44.202+0000] {logging_mixin.py:188} INFO - Nepal - Kathmandu
+[2025-10-01T22:21:44.841+0000] {logging_mixin.py:188} INFO - Netherlands - Amsterdam
+[2025-10-01T22:21:45.260+0000] {logging_mixin.py:188} INFO - New Caledonia - NoumâÂ©a
+[2025-10-01T22:21:46.522+0000] {logging_mixin.py:188} INFO - New Zealand - Wellington
+[2025-10-01T22:21:47.260+0000] {logging_mixin.py:188} INFO - Nicaragua - Managua
+[2025-10-01T22:21:47.936+0000] {logging_mixin.py:188} INFO - Niger - Niamey
+[2025-10-01T22:21:48.497+0000] {logging_mixin.py:188} INFO - Nigeria - Abuja
+[2025-10-01T22:21:49.267+0000] {logging_mixin.py:188} INFO - Niue - Alofi
+[2025-10-01T22:21:49.736+0000] {logging_mixin.py:188} INFO - Norfolk Island - Kingston
+[2025-10-01T22:21:50.167+0000] {logging_mixin.py:188} INFO - North Korea - Pyongyang
+[2025-10-01T22:21:51.241+0000] {logging_mixin.py:188} INFO - Northern Cyprus - Nicosia
+[2025-10-01T22:21:52.013+0000] {logging_mixin.py:188} INFO - United Kingdom Northern Ireland - Belfast
+[2025-10-01T22:21:52.503+0000] {logging_mixin.py:188} INFO - Northern Mariana Islands - Saipan
+[2025-10-01T22:21:55.468+0000] {logging_mixin.py:188} INFO - Norway - Oslo
+[2025-10-01T22:21:56.190+0000] {logging_mixin.py:188} INFO - Oman - Muscat
+[2025-10-01T22:21:57.067+0000] {logging_mixin.py:188} INFO - Pakistan - Islamabad
+[2025-10-01T22:21:57.682+0000] {logging_mixin.py:188} INFO - Palau - Ngerulmud
+[2025-10-01T22:21:58.670+0000] {logging_mixin.py:188} INFO - Palestine - Jerusalem
+[2025-10-01T22:21:59.486+0000] {logging_mixin.py:188} INFO - Panama - Panama City
+[2025-10-01T22:22:00.385+0000] {logging_mixin.py:188} INFO - Papua New Guinea - Port Moresby
+[2025-10-01T22:22:00.807+0000] {logging_mixin.py:188} INFO - Paraguay - Asunciââ¥n
+[2025-10-01T22:22:01.422+0000] {logging_mixin.py:188} INFO - Peru - Lima
+[2025-10-01T22:22:01.955+0000] {logging_mixin.py:188} INFO - Philippines - Manila
+[2025-10-01T22:22:02.405+0000] {logging_mixin.py:188} INFO - Pitcairn Islands - Adamstown
+[2025-10-01T22:22:04.491+0000] {logging_mixin.py:188} INFO - Poland - Warsaw
+[2025-10-01T22:22:06.972+0000] {logging_mixin.py:188} INFO - Portugal - Lisbon
+[2025-10-01T22:22:07.631+0000] {logging_mixin.py:188} INFO - Puerto Rico - San Juan
+[2025-10-01T22:22:08.215+0000] {logging_mixin.py:188} INFO - Qatar - Doha
+[2025-10-01T22:22:10.549+0000] {logging_mixin.py:188} INFO - Republic of China (Taiwan) - Taipei
+[2025-10-01T22:22:11.061+0000] {logging_mixin.py:188} INFO - Republic of the Congo - Brazzaville
+[2025-10-01T22:22:11.856+0000] {logging_mixin.py:188} INFO - Romania - Bucharest
+[2025-10-01T22:22:12.504+0000] {logging_mixin.py:188} INFO - Russia - Moscow
+[2025-10-01T22:22:12.992+0000] {logging_mixin.py:188} INFO - Rwanda - Kigali
+[2025-10-01T22:22:13.648+0000] {logging_mixin.py:188} INFO - Saint BarthâÂ©lemy - Gustavia
+[2025-10-01T22:22:14.164+0000] {logging_mixin.py:188} INFO - Saint Helena - Jamestown
+[2025-10-01T22:22:14.688+0000] {logging_mixin.py:188} INFO - Saint Kitts and Nevis - Basseterre
+[2025-10-01T22:22:15.115+0000] {logging_mixin.py:188} INFO - Saint Lucia - Castries
+[2025-10-01T22:22:15.672+0000] {logging_mixin.py:188} INFO - Saint Martin - Marigot
+[2025-10-01T22:22:16.073+0000] {logging_mixin.py:188} INFO - Saint Pierre and Miquelon - St. Pierre
+[2025-10-01T22:22:17.093+0000] {logging_mixin.py:188} INFO - Saint Vincent and the Grenadines - Kingstown
+[2025-10-01T22:22:17.673+0000] {logging_mixin.py:188} INFO - Samoa - Apia
+[2025-10-01T22:22:18.430+0000] {logging_mixin.py:188} INFO - San Marino - San Marino
+[2025-10-01T22:22:18.861+0000] {logging_mixin.py:188} INFO - Saudi Arabia - Riyadh
+[2025-10-01T22:22:19.423+0000] {logging_mixin.py:188} INFO - Scotland - Edinburgh
+[2025-10-01T22:22:20.055+0000] {logging_mixin.py:188} INFO - Senegal - Dakar
+[2025-10-01T22:22:20.526+0000] {logging_mixin.py:188} INFO - Serbia - Belgrade
+[2025-10-01T22:22:21.171+0000] {logging_mixin.py:188} INFO - Seychelles - Victoria
+[2025-10-01T22:22:21.717+0000] {logging_mixin.py:188} INFO - Sierra Leone - Freetown
+[2025-10-01T22:22:22.407+0000] {logging_mixin.py:188} INFO - Singapore - Singapore
+[2025-10-01T22:22:22.912+0000] {logging_mixin.py:188} INFO - Sint Maarten - Philipsburg
+[2025-10-01T22:22:24.254+0000] {logging_mixin.py:188} INFO - Slovakia - Bratislava
+[2025-10-01T22:22:25.117+0000] {logging_mixin.py:188} INFO - Slovenia - Ljubljana
+[2025-10-01T22:22:25.937+0000] {logging_mixin.py:188} INFO - Solomon Islands - Honiara
+[2025-10-01T22:22:27.220+0000] {logging_mixin.py:188} INFO - Somalia - Mogadishu
+[2025-10-01T22:22:27.963+0000] {logging_mixin.py:188} INFO - Somaliland - Hargeisa
+[2025-10-01T22:22:28.341+0000] {logging_mixin.py:188} INFO - South Africa - Pretoria
+[2025-10-01T22:22:28.841+0000] {logging_mixin.py:188} INFO - South Georgia and the South Sandwich Islands - Grytviken
+[2025-10-01T22:22:29.600+0000] {logging_mixin.py:188} INFO - South Korea - Seoul
+[2025-10-01T22:22:29.971+0000] {logging_mixin.py:188} INFO - South Ossetia - Tskhinvali
+[2025-10-01T22:22:30.983+0000] {logging_mixin.py:188} INFO - South Sudan - Juba
+[2025-10-01T22:22:31.649+0000] {logging_mixin.py:188} INFO - Spain - Madrid
+[2025-10-01T22:22:32.172+0000] {logging_mixin.py:188} INFO - Sri Lanka - Sri Jayawardenapura Kotte
+[2025-10-01T22:22:32.867+0000] {logging_mixin.py:188} INFO - Sudan - Khartoum
+[2025-10-01T22:22:33.647+0000] {logging_mixin.py:188} INFO - Suriname - Paramaribo
+[2025-10-01T22:22:34.188+0000] {logging_mixin.py:188} INFO - Swaziland - Mbabane
+[2025-10-01T22:22:34.630+0000] {logging_mixin.py:188} INFO - Sweden - Stockholm
+[2025-10-01T22:22:35.252+0000] {logging_mixin.py:188} INFO - Switzerland - Bern
+[2025-10-01T22:22:35.840+0000] {logging_mixin.py:188} INFO - Syria - Damascus
+[2025-10-01T22:22:36.875+0000] {logging_mixin.py:188} INFO - SâÂ£o TomâÂ© and Prââ ncipe - SâÂ£o TomâÂ©
+[2025-10-01T22:22:37.575+0000] {logging_mixin.py:188} INFO - Tajikistan - Dushanbe
+[2025-10-01T22:22:38.505+0000] {logging_mixin.py:188} INFO - Tanzania - Dodoma
+[2025-10-01T22:22:39.109+0000] {logging_mixin.py:188} INFO - Thailand - Bangkok
+[2025-10-01T22:22:39.575+0000] {logging_mixin.py:188} INFO - Togo - LomâÂ©
+[2025-10-01T22:22:40.066+0000] {logging_mixin.py:188} INFO - Tonga - NukuÂ Âªalofa
+[2025-10-01T22:22:40.453+0000] {logging_mixin.py:188} INFO - Transnistria - Tiraspol
+[2025-10-01T22:22:41.180+0000] {logging_mixin.py:188} INFO - Trinidad and Tobago - Port of Spain
+[2025-10-01T22:22:41.661+0000] {logging_mixin.py:188} INFO - Tristan da Cunha - Edinburgh of the Seven Seas
+[2025-10-01T22:22:42.195+0000] {logging_mixin.py:188} INFO - Tunisia - Tunis
+[2025-10-01T22:22:42.644+0000] {logging_mixin.py:188} INFO - Turkey - Ankara
+[2025-10-01T22:22:43.102+0000] {logging_mixin.py:188} INFO - Turkmenistan - Ashgabat
+[2025-10-01T22:22:44.436+0000] {logging_mixin.py:188} INFO - Turks and Caicos Islands - Cockburn Town
+[2025-10-01T22:22:44.842+0000] {logging_mixin.py:188} INFO - Tuvalu - Funafuti
+[2025-10-01T22:22:45.843+0000] {logging_mixin.py:188} INFO - Uganda - Kampala
+[2025-10-01T22:22:46.767+0000] {logging_mixin.py:188} INFO - Ukraine - Kyiv
+[2025-10-01T22:22:47.209+0000] {logging_mixin.py:188} INFO - United Arab Emirates - Abu Dhabi
+[2025-10-01T22:22:48.349+0000] {logging_mixin.py:188} INFO - United Kingdom; England - London
+[2025-10-01T22:22:49.102+0000] {logging_mixin.py:188} INFO - United States - Washington D.C.
+[2025-10-01T22:22:49.510+0000] {logging_mixin.py:188} INFO - United States Virgin Islands - Charlotte Amalie
+[2025-10-01T22:22:50.303+0000] {logging_mixin.py:188} INFO - Uruguay - Montevideo
+[2025-10-01T22:22:50.959+0000] {logging_mixin.py:188} INFO - Uzbekistan - Tashkent
+[2025-10-01T22:22:51.361+0000] {logging_mixin.py:188} INFO - Vanuatu - Port Vila
+[2025-10-01T22:22:51.953+0000] {logging_mixin.py:188} INFO - Vatican City - Vatican City
+[2025-10-01T22:22:52.679+0000] {logging_mixin.py:188} INFO - Venezuela - Caracas
+[2025-10-01T22:22:53.123+0000] {logging_mixin.py:188} INFO - Vietnam - Hanoi
+[2025-10-01T22:22:53.513+0000] {logging_mixin.py:188} INFO - Wales - Cardiff
+[2025-10-01T22:22:54.247+0000] {logging_mixin.py:188} INFO - Wallis and Futuna - Mata-Utu
+[2025-10-01T22:22:54.760+0000] {logging_mixin.py:188} INFO - Western Sahara - El Aaiââ«n
+[2025-10-01T22:22:55.201+0000] {logging_mixin.py:188} INFO - Yemen - SanaâÂ°
+[2025-10-01T22:22:55.588+0000] {logging_mixin.py:188} INFO - Zambia - Lusaka
+[2025-10-01T22:22:56.308+0000] {logging_mixin.py:188} INFO - Zimbabwe - Harare
+[2025-10-01T22:23:28.646+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-10-01T22:23:28.648+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-01T22:23:28.649+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-01T22:23:28.667+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=CountryCaptial_v1, task_id=load, run_id=manual__2025-10-01T22:19:47.422047+00:00, execution_date=20251001T221947, start_date=20251001T221952, end_date=20251001T222328
+[2025-10-01T22:23:28.731+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-01T22:23:28.746+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-01T22:23:28.747+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

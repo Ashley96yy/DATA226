@@ -1,0 +1,120 @@
+[2025-09-22T00:00:02.136+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-22T00:00:02.145+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_yfinance_stock.fetch_and_upsert scheduled__2025-09-21T00:00:00+00:00 [queued]>
+[2025-09-22T00:00:02.148+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_yfinance_stock.fetch_and_upsert scheduled__2025-09-21T00:00:00+00:00 [queued]>
+[2025-09-22T00:00:02.149+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-09-22T00:00:02.154+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_and_upsert> on 2025-09-21 00:00:00+00:00
+[2025-09-22T00:00:02.159+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=30079) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-09-22T00:00:02.160+0000] {standard_task_runner.py:64} INFO - Started process 30087 to run task
+[2025-09-22T00:00:02.161+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_yfinance_stock', 'fetch_and_upsert', 'scheduled__2025-09-21T00:00:00+00:00', '--job-id', '247', '--raw', '--subdir', 'DAGS_FOLDER/etl_yfinance_stock.py', '--cfg-path', '/tmp/tmpgsm66ax0']
+[2025-09-22T00:00:02.161+0000] {standard_task_runner.py:91} INFO - Job 247: Subtask fetch_and_upsert
+[2025-09-22T00:00:02.182+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_yfinance_stock.fetch_and_upsert scheduled__2025-09-21T00:00:00+00:00 [running]> on host 11e1994bdecf
+[2025-09-22T00:00:02.323+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dingyuyao' AIRFLOW_CTX_DAG_ID='etl_yfinance_stock' AIRFLOW_CTX_TASK_ID='fetch_and_upsert' AIRFLOW_CTX_EXECUTION_DATE='2025-09-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-21T00:00:00+00:00'
+[2025-09-22T00:00:02.323+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-22T00:00:02.324+0000] {logging_mixin.py:188} INFO - [DEBUG] Date range: 2025-03-26 to 2025-09-22
+[2025-09-22T00:00:02.326+0000] {logging_mixin.py:188} INFO - [DEBUG] Stock symbols: ['AAPL', 'MSFT', 'GOOGL', 'TSLA', 'NVDA']
+[2025-09-22T00:00:02.326+0000] {logging_mixin.py:188} INFO - [DEBUG] Fetching data for AAPL...
+[2025-09-22T00:00:02.327+0000] {warnings.py:112} WARNING - /opt/***/dags/etl_yfinance_stock.py:41: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, start = start_date.isoformat(), end = end_date.isoformat(), progress = False)
+
+[2025-09-22T00:00:03.033+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed data shape for AAPL: (123, 7)
+[2025-09-22T00:00:03.034+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed columns for AAPL: ['SYMBOL', 'DATE', 'OPEN', 'CLOSE', 'MIN', 'MAX', 'VOLUME']
+[2025-09-22T00:00:03.034+0000] {logging_mixin.py:188} INFO - [DEBUG] Sample data for AAPL:
+[2025-09-22T00:00:03.039+0000] {logging_mixin.py:188} INFO - Price SYMBOL       DATE        OPEN  ...         MIN         MAX    VOLUME
+0       AAPL 2025-03-26  222.964220  ...  219.931650  224.470543  34466100
+1       AAPL 2025-03-27  220.849406  ...  220.021431  224.440621  37094800
+
+[2 rows x 7 columns]
+[2025-09-22T00:00:03.039+0000] {logging_mixin.py:188} INFO - [DEBUG] Fetching data for MSFT...
+[2025-09-22T00:00:03.039+0000] {warnings.py:112} WARNING - /opt/***/dags/etl_yfinance_stock.py:41: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, start = start_date.isoformat(), end = end_date.isoformat(), progress = False)
+
+[2025-09-22T00:00:03.390+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed data shape for MSFT: (123, 7)
+[2025-09-22T00:00:03.391+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed columns for MSFT: ['SYMBOL', 'DATE', 'OPEN', 'CLOSE', 'MIN', 'MAX', 'VOLUME']
+[2025-09-22T00:00:03.391+0000] {logging_mixin.py:188} INFO - [DEBUG] Sample data for MSFT:
+[2025-09-22T00:00:03.395+0000] {logging_mixin.py:188} INFO - Price SYMBOL       DATE        OPEN  ...         MIN         MAX    VOLUME
+0       MSFT 2025-03-26  393.629088  ...  387.221412  393.938010  16108400
+1       MSFT 2025-03-27  388.775976  ...  386.055440  390.878638  13766800
+
+[2 rows x 7 columns]
+[2025-09-22T00:00:03.396+0000] {logging_mixin.py:188} INFO - [DEBUG] Fetching data for GOOGL...
+[2025-09-22T00:00:03.396+0000] {warnings.py:112} WARNING - /opt/***/dags/etl_yfinance_stock.py:41: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, start = start_date.isoformat(), end = end_date.isoformat(), progress = False)
+
+[2025-09-22T00:00:03.608+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed data shape for GOOGL: (123, 7)
+[2025-09-22T00:00:03.611+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed columns for GOOGL: ['SYMBOL', 'DATE', 'OPEN', 'CLOSE', 'MIN', 'MAX', 'VOLUME']
+[2025-09-22T00:00:03.612+0000] {logging_mixin.py:188} INFO - [DEBUG] Sample data for GOOGL:
+[2025-09-22T00:00:03.616+0000] {logging_mixin.py:188} INFO - Price SYMBOL       DATE        OPEN  ...         MIN         MAX    VOLUME
+0      GOOGL 2025-03-26  168.644811  ...  164.493550  169.253529  28901600
+1      GOOGL 2025-03-27  164.284009  ...  161.659532  165.072342  24508300
+
+[2 rows x 7 columns]
+[2025-09-22T00:00:03.616+0000] {logging_mixin.py:188} INFO - [DEBUG] Fetching data for TSLA...
+[2025-09-22T00:00:03.616+0000] {warnings.py:112} WARNING - /opt/***/dags/etl_yfinance_stock.py:41: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, start = start_date.isoformat(), end = end_date.isoformat(), progress = False)
+
+[2025-09-22T00:00:03.829+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed data shape for TSLA: (123, 7)
+[2025-09-22T00:00:03.830+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed columns for TSLA: ['SYMBOL', 'DATE', 'OPEN', 'CLOSE', 'MIN', 'MAX', 'VOLUME']
+[2025-09-22T00:00:03.830+0000] {logging_mixin.py:188} INFO - [DEBUG] Sample data for TSLA:
+[2025-09-22T00:00:03.833+0000] {logging_mixin.py:188} INFO - Price SYMBOL       DATE        OPEN  ...         MIN         MAX     VOLUME
+0       TSLA 2025-03-26  282.660004  ...  266.510010  284.899994  153629800
+1       TSLA 2025-03-27  272.480011  ...  271.820007  291.850006  162572100
+
+[2 rows x 7 columns]
+[2025-09-22T00:00:03.833+0000] {logging_mixin.py:188} INFO - [DEBUG] Fetching data for NVDA...
+[2025-09-22T00:00:03.834+0000] {warnings.py:112} WARNING - /opt/***/dags/etl_yfinance_stock.py:41: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, start = start_date.isoformat(), end = end_date.isoformat(), progress = False)
+
+[2025-09-22T00:00:04.165+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed data shape for NVDA: (123, 7)
+[2025-09-22T00:00:04.165+0000] {logging_mixin.py:188} INFO - [DEBUG] Processed columns for NVDA: ['SYMBOL', 'DATE', 'OPEN', 'CLOSE', 'MIN', 'MAX', 'VOLUME']
+[2025-09-22T00:00:04.166+0000] {logging_mixin.py:188} INFO - [DEBUG] Sample data for NVDA:
+[2025-09-22T00:00:04.170+0000] {logging_mixin.py:188} INFO - Price SYMBOL       DATE        OPEN  ...         MIN         MAX     VOLUME
+0       NVDA 2025-03-26  118.715065  ...  112.695818  118.825044  293463300
+1       NVDA 2025-03-27  111.335993  ...  110.646085  114.435602  236902100
+
+[2 rows x 7 columns]
+[2025-09-22T00:00:04.171+0000] {logging_mixin.py:188} INFO - [DEBUG] Combined data shape: (615, 7)
+[2025-09-22T00:00:04.171+0000] {logging_mixin.py:188} INFO - [DEBUG] Combined data columns: ['SYMBOL', 'DATE', 'OPEN', 'CLOSE', 'MIN', 'MAX', 'VOLUME']
+[2025-09-22T00:00:04.172+0000] {logging_mixin.py:188} INFO - [DEBUG] NaN count per column:
+[2025-09-22T00:00:04.173+0000] {logging_mixin.py:188} INFO - Price
+SYMBOL    0
+DATE      0
+OPEN      0
+CLOSE     0
+MIN       0
+MAX       0
+VOLUME    0
+dtype: int64
+[2025-09-22T00:00:04.174+0000] {logging_mixin.py:188} INFO - [DEBUG] Final data shape: (615, 7)
+[2025-09-22T00:00:04.175+0000] {logging_mixin.py:188} INFO - [DEBUG] Final data sample:
+[2025-09-22T00:00:04.178+0000] {logging_mixin.py:188} INFO - Price SYMBOL        DATE        OPEN  ...         MIN         MAX    VOLUME
+0       AAPL  2025-03-26  222.964220  ...  219.931650  224.470543  34466100
+1       AAPL  2025-03-27  220.849406  ...  220.021431  224.440621  37094800
+2       AAPL  2025-03-28  221.128734  ...  217.148471  223.263508  39818600
+3       AAPL  2025-03-31  216.480107  ...  215.702013  225.069084  65299300
+4       AAPL  2025-04-01  219.273268  ...  218.365486  223.133813  36412700
+
+[5 rows x 7 columns]
+[2025-09-22T00:00:04.186+0000] {base.py:84} INFO - Using connection ID 'snowflake_default' for task execution.
+[2025-09-22T00:00:04.187+0000] {connection.py:408} INFO - Snowflake Connector for Python Version: 3.11.0, Python Version: 3.12.4, Platform: Linux-6.10.14-linuxkit-aarch64-with-glibc2.36
+[2025-09-22T00:00:04.187+0000] {connection.py:1258} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-09-22T00:00:05.363+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-22T00:00:05.609+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-22T00:00:05.854+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-22T00:00:06.045+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-22T00:00:06.486+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-22T00:00:06.488+0000] {logging_mixin.py:188} INFO - [ctx] version=9.28.1, wh=BEETLE_QUERY_WH, role=TRAINING_ROLE, db=ASH_DB, schema=STOCK_SCHEMA
+[2025-09-22T00:00:09.928+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-22T00:00:09.930+0000] {logging_mixin.py:188} INFO - [DEBUG] Prepared 615 rows for insertion
+[2025-09-22T00:00:09.930+0000] {logging_mixin.py:188} INFO - [DEBUG] First row sample: {'SYMBOL': 'AAPL', 'DATE': datetime.date(2025, 3, 26), 'OPEN': 222.96422035625233, 'CLOSE': 220.9890594482422, 'MIN': 219.93165022699972, 'MAX': 224.47054292972726, 'VOLUME': 34466100}
+[2025-09-22T00:00:14.026+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2025-09-22T00:00:14.027+0000] {logging_mixin.py:188} INFO - [fetch_and_upsert] Upserted 615 rows into fact_stock_price_daily.
+[2025-09-22T00:00:14.028+0000] {connection.py:773} INFO - closed
+[2025-09-22T00:00:14.231+0000] {connection.py:779} INFO - No async queries seem to be running, deleting session
+[2025-09-22T00:00:14.397+0000] {python.py:237} INFO - Done. Returned value was: 615
+[2025-09-22T00:00:14.398+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-22T00:00:14.409+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_yfinance_stock, task_id=fetch_and_upsert, run_id=scheduled__2025-09-21T00:00:00+00:00, execution_date=20250921T000000, start_date=20250922T000002, end_date=20250922T000014
+[2025-09-22T00:00:14.431+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-22T00:00:14.536+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-22T00:00:14.537+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

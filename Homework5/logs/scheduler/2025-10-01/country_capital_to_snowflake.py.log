@@ -1,0 +1,204 @@
+[2025-10-01T21:18:44.262+0000] {processor.py:161} INFO - Started process (PID=49041) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:18:44.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:18:44.263+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:18:44.263+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:18:44.275+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:18:44.274+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 67, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:18:44.275+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:18:44.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.020 seconds
+[2025-10-01T21:19:14.531+0000] {processor.py:161} INFO - Started process (PID=49103) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:19:14.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:19:14.532+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:19:14.532+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:19:14.553+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:19:14.550+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 67, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:19:14.553+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:19:14.560+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.032 seconds
+[2025-10-01T21:19:44.873+0000] {processor.py:161} INFO - Started process (PID=49165) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:19:44.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:19:44.876+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:19:44.875+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:19:44.889+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:19:44.888+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 67, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:19:44.889+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:19:44.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.025 seconds
+[2025-10-01T21:20:15.342+0000] {processor.py:161} INFO - Started process (PID=49227) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:20:15.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:20:15.346+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:20:15.345+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:20:15.377+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:20:15.376+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 67, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:20:15.378+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:20:15.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.050 seconds
+[2025-10-01T21:20:35.453+0000] {processor.py:161} INFO - Started process (PID=49252) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:20:35.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:20:35.454+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:20:35.454+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:20:35.479+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:20:35.476+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 80, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:20:35.480+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:20:35.487+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.039 seconds
+[2025-10-01T21:21:05.599+0000] {processor.py:161} INFO - Started process (PID=49314) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:05.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:21:05.602+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:21:05.601+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:05.622+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:21:05.617+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 80, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:21:05.623+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:05.630+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.037 seconds
+[2025-10-01T21:21:36.239+0000] {processor.py:161} INFO - Started process (PID=49376) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:36.241+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:21:36.241+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:21:36.241+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:36.258+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:21:36.257+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 80, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:21:36.258+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:36.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.034 seconds
+[2025-10-01T21:21:37.481+0000] {processor.py:161} INFO - Started process (PID=49385) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:37.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:21:37.482+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:21:37.482+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:37.500+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:21:37.498+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 80, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:21:37.500+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:21:37.506+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.030 seconds
+[2025-10-01T21:22:07.665+0000] {processor.py:161} INFO - Started process (PID=49447) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:22:07.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:22:07.666+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:22:07.666+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:22:07.683+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:22:07.680+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 80, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:22:07.685+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:22:07.695+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.032 seconds
+[2025-10-01T21:22:38.535+0000] {processor.py:161} INFO - Started process (PID=49509) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:22:38.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:22:38.537+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:22:38.537+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:22:38.550+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:22:38.549+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 80, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:22:38.550+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:22:38.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.025 seconds
+[2025-10-01T21:23:08.634+0000] {processor.py:161} INFO - Started process (PID=49571) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:23:08.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:23:08.636+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:23:08.636+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:23:08.646+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:23:08.645+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 80, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:23:08.646+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:23:08.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.021 seconds
+[2025-10-01T21:23:30.692+0000] {processor.py:161} INFO - Started process (PID=49608) to work on /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:23:30.692+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/country_capital_to_snowflake.py for tasks to queue
+[2025-10-01T21:23:30.693+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:23:30.693+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:23:30.703+0000] {logging_mixin.py:188} INFO - [2025-10-01T21:23:30.703+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/country_capital_to_snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/country_capital_to_snowflake.py", line 80, in <module>
+    url = Variable.get("country_capital_url")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable country_capital_url does not exist'
+[2025-10-01T21:23:30.704+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/country_capital_to_snowflake.py
+[2025-10-01T21:23:30.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/country_capital_to_snowflake.py took 0.019 seconds

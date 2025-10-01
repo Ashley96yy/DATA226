@@ -1,0 +1,123 @@
+[2025-09-14T21:01:05.149+0000] {processor.py:161} INFO - Started process (PID=18701) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:01:05.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:01:05.150+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:05.150+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:01:05.154+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:01:05.203+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:05.203+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:smoke_snowflake
+[2025-09-14T21:01:05.207+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:05.207+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:smoke_snowflake
+[2025-09-14T21:01:05.211+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:05.210+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:smoke_snowflake
+[2025-09-14T21:01:05.211+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:05.211+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:01:05.218+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:05.218+0000] {dag.py:3111} INFO - Creating ORM DAG for smoke_snowflake
+[2025-09-14T21:01:05.218+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:05.218+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:01:05.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.083 seconds
+[2025-09-14T21:01:36.221+0000] {processor.py:161} INFO - Started process (PID=18760) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:01:36.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:01:36.223+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:36.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:01:36.227+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:01:36.244+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:36.244+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:01:36.253+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:01:36.253+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:01:36.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.054 seconds
+[2025-09-14T21:02:06.427+0000] {processor.py:161} INFO - Started process (PID=18820) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:02:06.429+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:02:06.429+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:02:06.429+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:02:06.435+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:02:06.458+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:02:06.457+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:02:06.465+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:02:06.465+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:02:06.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.056 seconds
+[2025-09-14T21:02:37.347+0000] {processor.py:161} INFO - Started process (PID=18880) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:02:37.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:02:37.349+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:02:37.348+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:02:37.352+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:02:37.365+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:02:37.365+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:02:37.371+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:02:37.371+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:02:37.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.043 seconds
+[2025-09-14T21:03:08.086+0000] {processor.py:161} INFO - Started process (PID=18940) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:03:08.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:03:08.089+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:03:08.088+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:03:08.093+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:03:08.107+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:03:08.107+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:03:08.116+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:03:08.116+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:03:08.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.049 seconds
+[2025-09-14T21:03:38.942+0000] {processor.py:161} INFO - Started process (PID=19000) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:03:38.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:03:38.944+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:03:38.943+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:03:38.947+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:03:38.964+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:03:38.963+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:03:38.973+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:03:38.973+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:03:38.984+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.049 seconds
+[2025-09-14T21:04:09.879+0000] {processor.py:161} INFO - Started process (PID=19060) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:04:09.881+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:04:09.881+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:04:09.881+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:04:09.885+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:04:09.904+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:04:09.903+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:04:09.914+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:04:09.914+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:04:09.923+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.051 seconds
+[2025-09-14T21:04:40.813+0000] {processor.py:161} INFO - Started process (PID=19120) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:04:40.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:04:40.817+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:04:40.816+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:04:40.824+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:04:40.844+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:04:40.844+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:04:40.855+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:04:40.855+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:04:40.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.062 seconds
+[2025-09-14T21:05:11.702+0000] {processor.py:161} INFO - Started process (PID=19180) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:05:11.704+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:05:11.705+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:05:11.704+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:05:11.710+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:05:11.723+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:05:11.723+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:05:11.731+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:05:11.731+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:05:11.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.048 seconds
+[2025-09-14T21:05:42.537+0000] {processor.py:161} INFO - Started process (PID=19240) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:05:42.538+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:05:42.539+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:05:42.538+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:05:42.542+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:05:42.556+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:05:42.556+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:05:42.566+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:05:42.566+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:05:42.578+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.047 seconds
+[2025-09-14T21:06:13.301+0000] {processor.py:161} INFO - Started process (PID=19300) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:06:13.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:06:13.302+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:06:13.302+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:06:13.306+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:06:13.319+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:06:13.319+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:06:13.326+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:06:13.326+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:06:13.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.042 seconds
+[2025-09-14T21:06:44.127+0000] {processor.py:161} INFO - Started process (PID=19360) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:06:44.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:06:44.128+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:06:44.128+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:06:44.131+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:06:44.144+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:06:44.144+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:06:44.154+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:06:44.154+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:06:44.163+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.040 seconds
+[2025-09-14T21:07:15.099+0000] {processor.py:161} INFO - Started process (PID=19420) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:07:15.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:07:15.101+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:07:15.100+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:07:15.105+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:07:15.120+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:07:15.120+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:07:15.130+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:07:15.130+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:07:15.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.047 seconds
+[2025-09-14T21:07:45.208+0000] {processor.py:161} INFO - Started process (PID=19480) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:07:45.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:07:45.209+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:07:45.209+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:07:45.213+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:07:45.224+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:07:45.224+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:07:45.229+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:07:45.229+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:07:45.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.033 seconds
+[2025-09-14T21:08:15.829+0000] {processor.py:161} INFO - Started process (PID=19541) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:08:15.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:08:15.831+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:08:15.830+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:08:15.835+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:08:15.855+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:08:15.855+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:08:15.865+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:08:15.864+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:08:15.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.052 seconds
+[2025-09-14T21:08:46.772+0000] {processor.py:161} INFO - Started process (PID=19601) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:08:46.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:08:46.774+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:08:46.774+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:08:46.778+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:08:46.797+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:08:46.797+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:08:46.810+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:08:46.809+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:08:46.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.056 seconds
+[2025-09-14T21:09:16.938+0000] {processor.py:161} INFO - Started process (PID=19661) to work on /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:09:16.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/smoke_snowflake.py for tasks to queue
+[2025-09-14T21:09:16.940+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:09:16.939+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:09:16.944+0000] {processor.py:840} INFO - DAG(s) 'smoke_snowflake' retrieved from /opt/airflow/dags/smoke_snowflake.py
+[2025-09-14T21:09:16.960+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:09:16.960+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-14T21:09:16.971+0000] {logging_mixin.py:188} INFO - [2025-09-14T21:09:16.971+0000] {dag.py:3947} INFO - Setting next_dagrun for smoke_snowflake to None, run_after=None
+[2025-09-14T21:09:16.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/smoke_snowflake.py took 0.050 seconds

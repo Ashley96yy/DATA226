@@ -1,0 +1,830 @@
+[2025-09-13T00:59:12.507+0000] {processor.py:161} INFO - Started process (PID=36) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T00:59:12.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T00:59:12.512+0000] {logging_mixin.py:188} INFO - [2025-09-13T00:59:12.511+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T00:59:12.523+0000] {logging_mixin.py:188} INFO - [2025-09-13T00:59:12.518+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T00:59:12.527+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T00:59:12.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.049 seconds
+[2025-09-13T00:59:43.104+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T00:59:43.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T00:59:43.109+0000] {logging_mixin.py:188} INFO - [2025-09-13T00:59:43.109+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T00:59:43.118+0000] {logging_mixin.py:188} INFO - [2025-09-13T00:59:43.117+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T00:59:43.118+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T00:59:43.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.037 seconds
+[2025-09-13T01:00:13.510+0000] {processor.py:161} INFO - Started process (PID=155) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:00:13.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:00:13.512+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:00:13.512+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:00:13.516+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:00:13.516+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:00:13.516+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:00:13.531+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.023 seconds
+[2025-09-13T01:00:44.097+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:00:44.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:00:44.100+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:00:44.100+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:00:44.105+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:00:44.104+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:00:44.105+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:00:44.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.049 seconds
+[2025-09-13T01:01:14.652+0000] {processor.py:161} INFO - Started process (PID=275) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:01:14.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:01:14.655+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:01:14.655+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:01:14.670+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:01:14.669+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:01:14.670+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:01:14.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.045 seconds
+[2025-09-13T01:01:45.140+0000] {processor.py:161} INFO - Started process (PID=335) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:01:45.141+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:01:45.143+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:01:45.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:01:45.152+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:01:45.151+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:01:45.152+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:01:45.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.035 seconds
+[2025-09-13T01:02:15.622+0000] {processor.py:161} INFO - Started process (PID=401) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:02:15.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:02:15.625+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:02:15.625+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:02:15.633+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:02:15.633+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:02:15.634+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:02:15.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.031 seconds
+[2025-09-13T01:02:46.074+0000] {processor.py:161} INFO - Started process (PID=461) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:02:46.075+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:02:46.076+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:02:46.076+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:02:46.085+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:02:46.084+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:02:46.085+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:02:46.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.028 seconds
+[2025-09-13T01:03:16.527+0000] {processor.py:161} INFO - Started process (PID=521) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:03:16.528+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:03:16.531+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:03:16.530+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:03:16.561+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:03:16.548+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:03:16.566+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:03:16.616+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.094 seconds
+[2025-09-13T01:03:47.202+0000] {processor.py:161} INFO - Started process (PID=581) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:03:47.203+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:03:47.205+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:03:47.205+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:03:47.213+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:03:47.212+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:03:47.214+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:03:47.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.037 seconds
+[2025-09-13T01:04:17.699+0000] {processor.py:161} INFO - Started process (PID=640) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:04:17.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:04:17.702+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:04:17.701+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:04:17.711+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:04:17.711+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:04:17.712+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:04:17.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.034 seconds
+[2025-09-13T01:04:48.128+0000] {processor.py:161} INFO - Started process (PID=700) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:04:48.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:04:48.132+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:04:48.132+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:04:48.140+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:04:48.140+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:04:48.141+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:04:48.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.039 seconds
+[2025-09-13T01:05:18.649+0000] {processor.py:161} INFO - Started process (PID=759) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:05:18.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:05:18.653+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:05:18.652+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:05:18.661+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:05:18.660+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:05:18.662+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:05:18.674+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.033 seconds
+[2025-09-13T01:05:49.056+0000] {processor.py:161} INFO - Started process (PID=819) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:05:49.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:05:49.060+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:05:49.059+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:05:49.071+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:05:49.070+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:05:49.072+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:05:49.086+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.037 seconds
+[2025-09-13T01:06:19.522+0000] {processor.py:161} INFO - Started process (PID=878) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:06:19.523+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:06:19.525+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:06:19.525+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:06:19.531+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:06:19.531+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:06:19.532+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:06:19.543+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.025 seconds
+[2025-09-13T01:06:49.878+0000] {processor.py:161} INFO - Started process (PID=938) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:06:49.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:06:49.882+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:06:49.882+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:06:49.891+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:06:49.890+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:06:49.892+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:06:49.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.034 seconds
+[2025-09-13T01:07:20.297+0000] {processor.py:161} INFO - Started process (PID=997) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:07:20.298+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:07:20.300+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:07:20.300+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:07:20.308+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:07:20.307+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:07:20.309+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:07:20.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.035 seconds
+[2025-09-13T01:07:50.929+0000] {processor.py:161} INFO - Started process (PID=1057) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:07:50.930+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:07:50.933+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:07:50.933+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:07:50.946+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:07:50.945+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:07:50.947+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:07:50.965+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.042 seconds
+[2025-09-13T01:08:21.792+0000] {processor.py:161} INFO - Started process (PID=1117) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:08:21.793+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:08:21.795+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:08:21.795+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:08:21.802+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:08:21.801+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:08:21.802+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:08:21.819+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.035 seconds
+[2025-09-13T01:08:52.388+0000] {processor.py:161} INFO - Started process (PID=1177) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:08:52.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:08:52.391+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:08:52.391+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:08:52.400+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:08:52.399+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 13
+    if no raw:
+          ^^^
+SyntaxError: invalid syntax
+[2025-09-13T01:08:52.400+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:08:52.413+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.031 seconds
+[2025-09-13T01:09:07.088+0000] {processor.py:161} INFO - Started process (PID=1233) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:09:07.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:09:07.089+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:09:07.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:09:07.092+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:09:07.091+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:09:07.092+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:09:07.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.013 seconds
+[2025-09-13T01:09:37.739+0000] {processor.py:161} INFO - Started process (PID=1291) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:09:37.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:09:37.742+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:09:37.742+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:09:37.746+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:09:37.745+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:09:37.747+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:09:37.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.027 seconds
+[2025-09-13T01:10:08.261+0000] {processor.py:161} INFO - Started process (PID=1350) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:10:08.262+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:10:08.264+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:10:08.263+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:10:08.267+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:10:08.266+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:10:08.267+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:10:08.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.022 seconds
+[2025-09-13T01:10:38.801+0000] {processor.py:161} INFO - Started process (PID=1409) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:10:38.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:10:38.803+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:10:38.803+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:10:38.806+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:10:38.805+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:10:38.806+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:10:38.817+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.021 seconds
+[2025-09-13T01:11:09.231+0000] {processor.py:161} INFO - Started process (PID=1468) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:11:09.232+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:11:09.234+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:11:09.234+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:11:09.238+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:11:09.237+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:11:09.238+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:11:09.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.024 seconds
+[2025-09-13T01:11:39.771+0000] {processor.py:161} INFO - Started process (PID=1527) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:11:39.771+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:11:39.774+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:11:39.773+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:11:39.780+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:11:39.777+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:11:39.781+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:11:39.796+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.029 seconds
+[2025-09-13T01:12:10.382+0000] {processor.py:161} INFO - Started process (PID=1586) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:12:10.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:12:10.383+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:12:10.383+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:12:10.385+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:12:10.385+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:12:10.386+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:12:10.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.014 seconds
+[2025-09-13T01:12:40.954+0000] {processor.py:161} INFO - Started process (PID=1645) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:12:40.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:12:40.956+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:12:40.955+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:12:40.960+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:12:40.959+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:12:40.960+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:12:40.972+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.024 seconds
+[2025-09-13T01:13:11.500+0000] {processor.py:161} INFO - Started process (PID=1704) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:13:11.502+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:13:11.505+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:13:11.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:13:11.509+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:13:11.508+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:13:11.510+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:13:11.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.031 seconds
+[2025-09-13T01:13:41.980+0000] {processor.py:161} INFO - Started process (PID=1763) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:13:41.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:13:41.983+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:13:41.983+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:13:42.031+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:13:42.024+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:13:42.032+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:13:42.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.085 seconds
+[2025-09-13T01:14:12.525+0000] {processor.py:161} INFO - Started process (PID=1822) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:14:12.525+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:14:12.527+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:14:12.527+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:14:12.531+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:14:12.530+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:14:12.531+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:14:12.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.025 seconds
+[2025-09-13T01:14:43.087+0000] {processor.py:161} INFO - Started process (PID=1881) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:14:43.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:14:43.089+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:14:43.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:14:43.093+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:14:43.092+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:14:43.093+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:14:43.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.023 seconds
+[2025-09-13T01:15:13.627+0000] {processor.py:161} INFO - Started process (PID=1940) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:15:13.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:15:13.629+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:15:13.628+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:15:13.632+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:15:13.631+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:15:13.632+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:15:13.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.021 seconds
+[2025-09-13T01:15:44.078+0000] {processor.py:161} INFO - Started process (PID=1999) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:15:44.079+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:15:44.081+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:15:44.080+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:15:44.084+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:15:44.083+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:15:44.084+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:15:44.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.025 seconds
+[2025-09-13T01:16:14.564+0000] {processor.py:161} INFO - Started process (PID=2058) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:16:14.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:16:14.568+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:16:14.567+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:16:14.572+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:16:14.571+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:16:14.572+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:16:14.583+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.025 seconds
+[2025-09-13T01:16:45.084+0000] {processor.py:161} INFO - Started process (PID=2117) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:16:45.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:16:45.086+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:16:45.086+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:16:45.090+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:16:45.089+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:16:45.090+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:16:45.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.024 seconds
+[2025-09-13T01:17:15.649+0000] {processor.py:161} INFO - Started process (PID=2176) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:17:15.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:17:15.651+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:17:15.651+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:17:15.655+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:17:15.654+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:17:15.656+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:17:15.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.023 seconds
+[2025-09-13T01:17:46.131+0000] {processor.py:161} INFO - Started process (PID=2235) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:17:46.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:17:46.136+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:17:46.135+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:17:46.141+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:17:46.140+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:17:46.142+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:17:46.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.031 seconds
+[2025-09-13T01:18:16.741+0000] {processor.py:161} INFO - Started process (PID=2294) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:18:16.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:18:16.744+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:18:16.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:18:16.748+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:18:16.747+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:18:16.748+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:18:16.761+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.025 seconds
+[2025-09-13T01:18:47.359+0000] {processor.py:161} INFO - Started process (PID=2353) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:18:47.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:18:47.362+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:18:47.361+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:18:47.365+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:18:47.364+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:18:47.365+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:18:47.378+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.023 seconds
+[2025-09-13T01:19:18.162+0000] {processor.py:161} INFO - Started process (PID=2418) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:19:18.163+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:19:18.166+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:19:18.165+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:19:18.171+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:19:18.169+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:19:18.171+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:19:18.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.032 seconds
+[2025-09-13T01:19:48.910+0000] {processor.py:161} INFO - Started process (PID=2477) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:19:48.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:19:48.913+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:19:48.913+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:19:48.917+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:19:48.916+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:19:48.918+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:19:48.931+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.026 seconds
+[2025-09-13T01:20:19.698+0000] {processor.py:161} INFO - Started process (PID=2536) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:20:19.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:20:19.702+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:20:19.702+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:20:19.706+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:20:19.705+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:20:19.706+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:20:19.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.025 seconds
+[2025-09-13T01:20:50.256+0000] {processor.py:161} INFO - Started process (PID=2595) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:20:50.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:20:50.260+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:20:50.259+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:20:50.264+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:20:50.263+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:20:50.264+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:20:50.276+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.026 seconds
+[2025-09-13T01:21:20.871+0000] {processor.py:161} INFO - Started process (PID=2654) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:21:20.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:21:20.874+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:21:20.874+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:21:20.878+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:21:20.877+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:21:20.879+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:21:20.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.028 seconds
+[2025-09-13T01:21:51.287+0000] {processor.py:161} INFO - Started process (PID=2713) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:21:51.288+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:21:51.291+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:21:51.290+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:21:51.297+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:21:51.296+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:21:51.298+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:21:51.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.035 seconds
+[2025-09-13T01:22:22.084+0000] {processor.py:161} INFO - Started process (PID=2772) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:22:22.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:22:22.088+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:22:22.087+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:22:22.091+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:22:22.090+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:22:22.092+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:22:22.104+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.026 seconds
+[2025-09-13T01:22:52.858+0000] {processor.py:161} INFO - Started process (PID=2831) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:22:52.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:22:52.861+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:22:52.861+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:22:52.865+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:22:52.864+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:22:52.866+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:22:52.878+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.026 seconds
+[2025-09-13T01:23:23.561+0000] {processor.py:161} INFO - Started process (PID=2890) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:23:23.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:23:23.564+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:23:23.564+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:23:23.570+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:23:23.568+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:23:23.570+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:23:23.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.032 seconds
+[2025-09-13T01:23:54.369+0000] {processor.py:161} INFO - Started process (PID=2949) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:23:54.371+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:23:54.373+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:23:54.373+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:23:54.376+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:23:54.375+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:23:54.377+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:23:54.389+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.025 seconds
+[2025-09-13T01:24:25.026+0000] {processor.py:161} INFO - Started process (PID=3008) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:24:25.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:24:25.030+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:24:25.029+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:24:25.033+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:24:25.032+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:24:25.033+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:24:25.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.028 seconds
+[2025-09-13T01:24:55.835+0000] {processor.py:161} INFO - Started process (PID=3067) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:24:55.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:24:55.837+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:24:55.837+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:24:55.841+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:24:55.840+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:24:55.841+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:24:55.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.024 seconds
+[2025-09-13T01:25:26.657+0000] {processor.py:161} INFO - Started process (PID=3126) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:25:26.658+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:25:26.660+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:25:26.660+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:25:26.663+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:25:26.662+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:25:26.663+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:25:26.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.022 seconds
+[2025-09-13T01:25:57.346+0000] {processor.py:161} INFO - Started process (PID=3185) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:25:57.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:25:57.351+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:25:57.351+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:25:57.355+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:25:57.354+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:25:57.356+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:25:57.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.031 seconds
+[2025-09-13T01:26:05.429+0000] {processor.py:161} INFO - Started process (PID=3186) to work on /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:26:05.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/yfinance_csv.py for tasks to queue
+[2025-09-13T01:26:05.431+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:26:05.431+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:26:05.437+0000] {logging_mixin.py:188} INFO - [2025-09-13T01:26:05.436+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/yfinance_csv.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yfinance_csv.py", line 5, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2025-09-13T01:26:05.437+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/yfinance_csv.py
+[2025-09-13T01:26:05.449+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/yfinance_csv.py took 0.028 seconds
